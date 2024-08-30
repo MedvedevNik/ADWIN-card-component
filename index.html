@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+    .card:hover .links {
+		max-height: 500px;
+		border-top: 1px solid rgba(229, 231, 235, 1);
+		opacity: 1;
+    }
+  </style>
+</head>
+<!-- primary
+secondary
+white -->
+<body class="bg-gray-200 flex justify-center items-center min-h-screen font-['Inter']">
+
+  <!-- Card -->
+  <section class="card w-full min-w-[315px] max-w-[440px] bg-white rounded-lg shadow-md overflow-hidden relative transition-transform transform hover:shadow-xl duration-500">
+    
+    <!-- Button in the top right corner -->
+    <button class="absolute top-[12px] right-[12px] bg-white text-[#1F2937] text-xs font-medium px-[6px] py-[6px] rounded">button</button>
+    
+    <!-- Card Image ToDo: Picture -->
+    <div class="bg-gray-300 h-40 flex items-center justify-center"></div>
+
+    <!-- Card Body -->
+    <div class="py-4 px-3 flex flex-col gap-3">
+      <header class="flex items-center justify-between">
+		<h3 class="flex flex-col">
+			<span class="text-[#6B7280] text-sm">Subheader</span>
+			<span class="text-xl font-medium text-[#1F2937]">Header</span>
+		</h3>
+		<span class="text-[#1F2937] font-medium text-lg">Text</span>
+	  </header>
+
+      <ul class="links flex flex-col gap-2 max-h-0 outline-1 opacity-0 overflow-hidden transition-all duration-500 pt-3">
+		<li class="flex justify-between text-[#6B7280] text-sm">
+          <span>Text</span>
+          <a href="#" class="text-[#1F2937]">Link</a>
+        </li>
+        <li class="flex justify-between text-[#6B7280] text-sm">
+          <span>Text</span>
+          <a href="#" class="text-[#1F2937]">Link</a>
+        </li>
+        <li class="flex justify-between text-[#6B7280] text-sm">
+          <span>Text</span>
+          <a href="#" class="text-[#1F2937]">Link</a>
+        </li>
+        <li class="flex justify-between text-[#6B7280] text-sm">
+          <span>Text</span>
+          <a href="#" class="text-[#1F2937]">Link</a>
+        </li>
+      </ul>
+
+      <!-- Button -->
+     <footer class="flex flex-col gap-3">
+		<button class="w-full bg-[#6B7280] text-sm font-semibold text-white py-3.5 rounded-lg">Button</button>
+
+		<div class="text-[#6B7280] text-xs text-center">Sub text</div>  
+	 </footer>
+      
+    </div>
+  </div>
+
+</body>
+</html>
